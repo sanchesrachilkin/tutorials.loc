@@ -8,6 +8,60 @@
 </head>
 <body>
     <div class="container">
+        <form action="new.html" method="post">
+            <fieldset>
+                <legend>Регистрация</legend>
+                <div>
+                    <label for="name">Имя</label>
+                    <input type="text" placeholder="Введите имя" id="name" name="name">
+                </div>
+                <div>
+                    <label for="pass">Пароль</label>
+                    <input type="password" placeholder="Введите пароль" id="pass" name="pass">
+                </div>
+                <div>
+                    <label>Повторите пароль</label>
+                    <input type="password" placeholder="Повторите пароль" id="conf_pass" name="conf_pass">
+                </div>
+                <div>
+                    <label for="city">Город</label>
+                    <select id="city">
+                        <option value="0" selected>Минск</option>
+                        <option value="1">Москва</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="person">Физическое лицо</label>
+                    <input type="radio" id="person" name="subject">
+                    <label for="company">Юридическое лицо</label>
+                    <input type="radio" id="company" name="subject">
+                    <label for="bomj">Бомж</label>
+                    <input type="radio" id="bomj" name="subject">
+                </div>
+                <div>
+                    <label for="messages_add">Получать сообщения от нас</label>
+                    <input type="checkbox" id="messages_add" name="messages_add"> <br>
+                    <label for="conditions">Согласен с условиями</label>
+                    <input type="checkbox" id="conditions" name="conditions">
+                </div>
+                <div>
+                    <Label for="pet">Выберите питомца</Label>
+                    <select name="pet" id="pet" size="4" multiple="multiple">
+                        <option value="0">Собака</option>
+                        <option value="1">Кот</option>
+                        <option value="2">Хомяк</option>
+                        <option value="3">Попугай</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit">Отправить</button>
+                    <button type="reset">Очистить форму</button>
+                </div>
+            </fieldset>
+
+        </form>
+    </div>
+    <div class="container">
         <h1 class="center">Результаты школьной спартакиады</h1>
         <table border="0" cellspacing="0" cellpadding="0" class="table table-bordered">
             <thead>
