@@ -1,115 +1,77 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная</title>
+    <!-- *** Google Fonts *** -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&amp;subset=cyrillic" rel="stylesheet">
+    <!-- *** Font Awesome icon font *** -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- *** Base template stylesheets *** -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- *** Base layout stylesheets *** -->
+    <link rel="stylesheet" href="css/layout.css">
+    <!-- *** Responsive stylesheets *** -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
-    <div class="container">
-        <form action="new.html" method="post">
-            <fieldset>
-                <legend>Регистрация</legend>
-                <div>
-                    <label for="name">Имя</label>
-                    <input type="text" placeholder="Введите имя" id="name" name="name">
+    <header class="header" id="header">
+        <div class="container header__container">
+            <div class="header__top navbar">
+                <div class="navbar__left logo">
+                    <div class="logo__item"></div>
                 </div>
-                <div>
-                    <label for="pass">Пароль</label>
-                    <input type="password" placeholder="Введите пароль" id="pass" name="pass">
+                <div class="navbar__center topmenu">
+                    <nav>
+                        <ul class="topmenu__list">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div>
-                    <label>Повторите пароль</label>
-                    <input type="password" placeholder="Повторите пароль" id="conf_pass" name="conf_pass">
+                <div class="navbar__right icons">
+                    <nav>
+                        <ul class="icons__list">
+                            <li><i class="fa fa-search"></i></li>
+                            <li>
+                                <div class="burger_button">
+                                    <span class="burger_button__line"></span>
+                                    <span class="burger_button__line"></span>
+                                    <span class="burger_button__line"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <div>
-                    <label for="city">Город</label>
-                    <select id="city">
-                        <option value="0" selected>Минск</option>
-                        <option value="1">Москва</option>
-                    </select>
+            </div>
+            <div class="header__middle title">
+                <div class="title__table_cell">
+                    <div class="title__content">
+                        <h1 class="title__header">Web Design</h1>
+                        <div class="title__text">
+                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                                condimentum , ut fermentum massa justo sit amet
+                                erat a ante venenatis dapibus posuere velit
+                            </p>
+                        </div>
+                        <a href="#" class="title__button default_button">Really?</a>
+                    </div>
                 </div>
-                <div>
-                    <label for="person">Физическое лицо</label>
-                    <input type="radio" id="person" name="subject">
-                    <label for="company">Юридическое лицо</label>
-                    <input type="radio" id="company" name="subject">
-                    <label for="bomj">Бомж</label>
-                    <input type="radio" id="bomj" name="subject">
-                </div>
-                <div>
-                    <label for="messages_add">Получать сообщения от нас</label>
-                    <input type="checkbox" id="messages_add" name="messages_add"> <br>
-                    <label for="conditions">Согласен с условиями</label>
-                    <input type="checkbox" id="conditions" name="conditions">
-                </div>
-                <div>
-                    <Label for="pet">Выберите питомца</Label>
-                    <select name="pet" id="pet" size="4" multiple="multiple">
-                        <option value="0">Собака</option>
-                        <option value="1">Кот</option>
-                        <option value="2">Хомяк</option>
-                        <option value="3">Попугай</option>
-                    </select>
-                </div>
-                <div>
-                    <button type="submit">Отправить</button>
-                    <button type="reset">Очистить форму</button>
-                </div>
-            </fieldset>
-
-        </form>
-    </div>
-    <div class="container">
-        <h1 class="center">Результаты школьной спартакиады</h1>
-        <table border="0" cellspacing="0" cellpadding="0" class="table table-bordered">
-            <thead>
-            <tr>
-                <th rowspan="3">Ученик</th>
-                <th colspan="4">Упражнение</th>
-            </tr>
-            <tr>
-                <th colspan="2">Прыжок в длину с места</th>
-                <th colspan="2">Бег на 1000 метров</th>
-            </tr>
-            <tr>
-                <th>Результат, см.</th>
-                <th>Оценка</th>
-                <th>Результат, с.</th>
-                <th>Оценка</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Баутин Дима</td>
-                <td>197</td>
-                <td>5</td>
-                <td>220</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>Голубев Миша</td>
-                <td>178</td>
-                <td>4</td>
-                <td>263</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>Куликов Иван</td>
-                <td>159</td>
-                <td>3</td>
-                <td>306</td>
-                <td>3</td>
-            </tr>
-            </tbody>
-        </table>
-        <div class="btn-group" role="group" aria-label="...">
-            <button type="button" class="btn btn-default">Left</button>
-            <button type="button" class="btn btn-default">Middle</button>
-            <button type="button" class="btn btn-default">Right</button>
+            </div>
         </div>
-    </div>
-
+    </header>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/template.js"></script>
 </body>
 </html>
