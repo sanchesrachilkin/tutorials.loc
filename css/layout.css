@@ -225,3 +225,47 @@
 .block4 {
     background:  url("../images/block/block4.jpg");
 }
+
+
+.bottomsidebar__container{
+    padding-top: 115px;
+    padding-bottom: 120px;
+}
+
+
+.bottommenu {
+    float: left;
+    width:  25%;
+}
+
+.bottommenu__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #151515;
+    margin-bottom: 40px;
+}
+
+.bottommenu__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.bottommenu__list li a {
+    color: #565656;
+    font-size: 14px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.bottommenu__list li a:hover {
+    text-decoration: none;
+}
+
+.bottommenu__text {
+    color: #565656;
+    font-size: 14px;
+    font-style: italic;
+}
