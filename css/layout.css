@@ -226,6 +226,24 @@
     background:  url("../images/block/block4.jpg");
 }
 
+p.text {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 347px;
+
+}
+
+p.describe {
+    font-size: 18px;
+    color: #ffffff;
+    font-style: italic;
+    text-align: center;
+    margin: 0px;
+}
 
 .bottomsidebar__container{
     padding-top: 115px;
@@ -268,4 +286,17 @@
     color: #565656;
     font-size: 14px;
     font-style: italic;
+}
+.footer {
+
+    background-color: black;
+    height: 96px;
+
+}
+p.copyright {
+    text-align: center;
+    color: #424242;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 96px;
 }
